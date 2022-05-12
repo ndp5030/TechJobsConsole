@@ -118,7 +118,29 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
+            //int k = 0;
+            //for (int k = 0; k < someJobs.Count; k++)
+
+            foreach (Dictionary<string, string> kvp in someJobs)
+            {
+            Console.WriteLine("~~~~~~");
+                Console.WriteLine($"name: {kvp["name"]}");
+                Console.WriteLine($"employer: {kvp["employer"]}");
+                Console.WriteLine($"location: {kvp["location"]}");
+                Console.WriteLine($"position type: {kvp["position type"]}");
+                Console.WriteLine($"core competency: {kvp["core competency"]}");
+            Console.WriteLine("~~~~~~");
+
+
+            }
+
+            //    Console.WriteLine("PrintJobs is not implemented yet");
+            //    name: {someJobs["name"]} 
+            //employer: {someJobs["employer"]} 
+            //location: {someJobs["location"]} 
+            //    position type: {someJobs["position type"]} 
+            //    core competency: {someJobs["core competency"]} 
+            //    );
         }
     }
 }
